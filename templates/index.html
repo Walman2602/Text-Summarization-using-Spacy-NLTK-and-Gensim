@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Summaryzer</title>
 
-  <!-- CSS  -->
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
-<body><div class="navbar-fixed" id="index">
+</head>
+<body><div class="navbar-fixed">
    <nav class="grey darken-4" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Summaryzer</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#index">Home</a></li>
+        <li><a href="{{url_for('index')}}">Home</a></li>
          <li><a href="#aboutapp">About</a></li>
       </ul>
 
@@ -42,7 +43,7 @@
           </h5>
          
            <div class="row center">
-          <a href="index.html" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Refresh</a>
+          <a href="{{url_for('index')}}" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">Refresh</a>
         </div>
         </div>
       </li>
@@ -167,10 +168,10 @@
   </footer>
 
 
-  <!--  Scripts-->
+
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="static/js/materialize.js"></script>
   <script src="static/js/init.js"></script>
-<!-- Jesse JCharis -->
+
   </body>
 </html>
